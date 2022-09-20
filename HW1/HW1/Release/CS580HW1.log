@@ -1,0 +1,5 @@
+﻿  rend.cpp
+C:\Users\avira\Downloads\HW1\HW1\rend.cpp(144,33): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\Downloads\HW1\HW1\rend.cpp(145,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\Downloads\HW1\HW1\rend.cpp(146,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+  CS580HW1.vcxproj -> C:\Users\avira\Downloads\HW1\HW1\Release\CS580HW1.exe
