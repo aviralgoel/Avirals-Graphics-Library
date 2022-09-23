@@ -1,18 +1,1 @@
-﻿  StdAfx.cpp
-  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
-  Application.cpp
-  Application2.cpp
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(84,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(91,18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(106,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(107,6): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(113,6): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\Downloads\HW2\HW2\Application2.cpp(119,6): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  CS580HW.cpp
-C:\Users\avira\Downloads\HW2\HW2\CS580HW.cpp(58,2): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
-  CS580HWDoc.cpp
-  CS580HWView.cpp
-  MainFrm.cpp
-  rend.cpp
-  Generating Code...
-  CS580HW2.vcxproj -> C:\Users\avira\Downloads\HW2\HW2\Release\CS580HW2.exe
+﻿  CS580HW2.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Release\CS580HW2.exe

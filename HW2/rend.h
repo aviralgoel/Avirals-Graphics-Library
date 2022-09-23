@@ -72,6 +72,14 @@ public:
 	// HW2: Render methods
 	int GzPutAttribute(int numAttributes, GzToken *nameList, GzPointer *valueList);
 	int GzPutTriangle(int numParts, GzToken *nameList, GzPointer *valueList);
+
+	void SortByY(GzCoord& v0, GzCoord& v1, GzCoord& v2);
+
+	GzIntensity GzClampPixelValueFloor(GzIntensity pixelValue);
+
+	GzIntensity GzClampPixelValueCeil(GzIntensity pixelValue);
+
+	GzIntensity GzBitShift4PixelValue(GzIntensity pixelValue);
 	
 	// Extra methods: NOT part of API - just for general assistance */
 	inline int ARRAY(int x, int y){return x+(y*xres);}	/* simplify fbuf indexing */
