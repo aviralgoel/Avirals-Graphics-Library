@@ -73,13 +73,19 @@ public:
 	int GzPutAttribute(int numAttributes, GzToken *nameList, GzPointer *valueList);
 	int GzPutTriangle(int numParts, GzToken *nameList, GzPointer *valueList);
 
-	void SortByY(GzCoord& v0, GzCoord& v1, GzCoord& v2);
+	void SortByX(GzCoord& v0, GzCoord& v1, GzCoord& v2);
 
+	void SortByY(GzCoord& v0, GzCoord& v1, GzCoord& v2);
+	float CalculateCoEfficientA(float x, float y);
+	float CalculateCoEfficientB(float x, float y);
+	float CalculateCoEfficientC(float x1, float x2, float y1, float y2);
+	float ZInterPolate(float i, float j, GzCoord v0, GzCoord v1, GzCoord v2);
 	GzIntensity GzClampPixelValueFloor(GzIntensity pixelValue);
 
 	GzIntensity GzClampPixelValueCeil(GzIntensity pixelValue);
 
 	GzIntensity GzBitShift4PixelValue(GzIntensity pixelValue);
+	
 	
 	// Extra methods: NOT part of API - just for general assistance */
 	inline int ARRAY(int x, int y){return x+(y*xres);}	/* simplify fbuf indexing */

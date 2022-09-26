@@ -1,1 +1,8 @@
-﻿  CS580HW2.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Release\CS580HW2.exe
+﻿  Application2.cpp
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(84,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(91,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(106,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(107,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(113,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(119,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  CS580HW2.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Release\CS580HW2.exe

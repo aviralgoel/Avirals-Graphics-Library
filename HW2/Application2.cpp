@@ -16,7 +16,7 @@ static char THIS_FILE[]=__FILE__;
 #define new DEBUG_NEW
 #endif
 
-#define INFILE2  "tri.asc"
+#define INFILE2  "pot4.screen.asc"
 #define OUTFILE2 "output.ppm"
 
 /* 
