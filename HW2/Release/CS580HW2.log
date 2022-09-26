@@ -1,8 +1,13 @@
-﻿  Application2.cpp
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(84,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(91,17): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(106,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(107,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(113,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Application2.cpp(119,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  rend.cpp
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(141,33): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(142,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(143,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(212,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(213,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(214,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(215,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(238,102): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(238,100): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(238,86): warning C4244: 'argument': conversion from 'float' to 'GzDepth', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\rend.cpp(245): warning C4715: 'GzRender::GzPutTriangle': not all control paths return a value
   CS580HW2.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW2\Release\CS580HW2.exe

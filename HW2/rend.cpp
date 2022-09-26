@@ -161,10 +161,10 @@ int GzRender::GzPutAttribute(int numAttributes, GzToken* nameList, GzPointer* va
 		if (nameList[i] == GZ_RGB_COLOR)
 		{
 			// fetch the value of the attribute and cast to proper type
-			GzColor* color = (GzColor*)valueList[0];
-			flatcolor[0] = *color[0];
-			flatcolor[1] = *color[1];
-			flatcolor[2] = *color[2];
+			float* color = (float*)valueList[0];
+			flatcolor[0] = color[0];
+			flatcolor[1] = color[1];
+			flatcolor[2] = color[2];
 		}
 	}
 	return GZ_SUCCESS;
