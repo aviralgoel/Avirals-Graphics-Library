@@ -53,11 +53,15 @@ public:
 
 	// Constructors
 	GzRender(int xRes, int yRes);
+	void CameraInit();
 	~GzRender();
 
 	// HW1: Display methods
 	int GzDefault();
 	int GzBeginRender();
+	
+	float MagnitudeOfVector(GzCoord& cl);
+	float DotProduct3v(GzCoord& a, GzCoord& b);
 	int GzPut(int i, int j, GzIntensity r, GzIntensity g, GzIntensity b, GzIntensity a, GzDepth z);
 	int GzGet(int i, int j, GzIntensity *r, GzIntensity *g, GzIntensity *b, GzIntensity *a, GzDepth	*z);
 
@@ -67,6 +71,28 @@ public:
 	// HW2: Render methods
 	int GzPutAttribute(int numAttributes, GzToken *nameList, GzPointer *valueList);
 	int GzPutTriangle(int numParts, GzToken *nameList, GzPointer *valueList);
+
+	void SortByXSpecialCases(GzCoord  vertices[3]);
+
+	void SortByY(GzCoord  vertices[3]);
+
+	void SwapMatrixElements(GzCoord  vertices[3], int i, int j);
+
+	GzIntensity GzClampPixelValueFloor(GzIntensity pixelValue);
+
+	GzIntensity GzClampPixelValueCeil(GzIntensity pixelValue);
+
+	GzIntensity GzBitShift4PixelValue(GzIntensity pixelValue);
+
+	float CalculateCoEfficientA(float x, float y);
+
+	float CalculateCoEfficientB(float x, float y);
+
+	float CalculateCoEfficientC(float x1, float x2, float y1, float y2);
+
+	float ZInterPolate(float i, float j, GzCoord verts[3]);
+
+
 	
 	// HW3
 	int GzDefaultCamera();
