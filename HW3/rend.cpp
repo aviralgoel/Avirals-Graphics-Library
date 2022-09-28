@@ -11,10 +11,6 @@
 /***********************************************/
 /* HW1 methods: copy here the methods from HW1 */
 
-#define RGBA_DIMEMSION	4	/* RGBA -> 4D color */
-#define RGB_DIMEMSION	3	/* RGB -> 3D color */
-#define COLOR_LIMIT		4095	/* Clamping the color value into 0~4095. */
-
 int GzRender::GzRotXMat(float degree, GzMatrix mat)
 {
 	/* HW 3.1
@@ -549,8 +545,10 @@ int GzRender::GzPutTriangle(int numParts, GzToken* nameList, GzPointer* valueLis
 		float maxY = ceil(max(max(verts[0][1], verts[1][1]), verts[2][1]));
 
 		// Calculate co-efficient of Edge Equation
-		float A12 = CalculateCoEfficientA(verts[1][1], verts[0][1]); // x2-x1
-		float B12 = CalculateCoEfficientB(verts[1][0], verts[0][0]);	// - x2-x1
+		// Compute ABC for each edge (slide 15)
+		float A12 = CalculateCoEfficientA(verts[1][1], verts[0][1]); // y2-y1 = deltaY12
+		float B12 = CalculateCoEfficientB(verts[1][0], verts[0][0]);	// - x2-x1 = -deltaX12
+		// deltaX12 * Y2 - deltaY12 * X2
 		float C12 = CalculateCoEfficientC(verts[0][0], verts[1][0], verts[0][1], verts[1][1]); // (x2-x1)*y2 + (y2-y1)* x2
 		float A23 = CalculateCoEfficientA(verts[2][1], verts[1][1]);
 		float B23 = CalculateCoEfficientB(verts[2][0], verts[1][0]);
@@ -583,19 +581,22 @@ int GzRender::GzPutTriangle(int numParts, GzToken* nameList, GzPointer* valueLis
 }
 void GzRender::SortByXSpecialCases(GzCoord  vertices[3])
 {
-
+	// V1y = V2y ( FLAT TOP )
 	if (ceil(vertices[0][1]) == ceil(vertices[1][1])) {
 		if (vertices[0][0] > vertices[1][0]) {
 			SwapMatrixElements(vertices, 0, 1);
 		}
 	}
+	// V2y = V3y (FLAT BOTTON)
 	else if (ceil(vertices[1][1]) == ceil(vertices[2][1])) {
 		if (vertices[2][0] > vertices[1][0]) {
 			SwapMatrixElements(vertices, 2, 1);
 		}
 	}
+	// Neither FB or FT
 	else {
 		float  X_mid;
+
 		if (ceil(vertices[0][0]) == ceil(vertices[2][0])) {
 			X_mid = vertices[0][0];
 		}
@@ -603,6 +604,8 @@ void GzRender::SortByXSpecialCases(GzCoord  vertices[3])
 			float slopeOfSideEdge = (vertices[0][1] - vertices[2][1]) / (vertices[0][0] - vertices[2][0]);
 			X_mid = (vertices[1][1] - vertices[0][1]) / slopeOfSideEdge + vertices[0][0];
 		}
+
+
 		if (X_mid > vertices[1][0]) {
 			SwapMatrixElements(vertices, 1, 2);
 		}
@@ -664,12 +667,17 @@ float GzRender::CalculateCoEfficientC(float x1, float x2, float y1, float y2)
 }
 
 float GzRender::ZInterPolate(float i, float j, GzCoord verts[3])
-{
+{	
+	// slide 18
+	// Ax + By + Cz + D = 0
+	// we know x and y and z at vertex 0.
+	// A = cross product of y and z terms and so on
 	float crossBC = ((verts[1][1] - verts[0][1]) * (verts[2][2] - verts[0][2])) - ((verts[1][2] - verts[0][2]) * (verts[2][1] - verts[0][1]));
 	float crossAC = -(((verts[1][0] - verts[0][0]) * (verts[2][2] - verts[0][2])) - ((verts[1][2] - verts[0][2]) * (verts[2][0] - verts[0][0])));
 	float crossAB = ((verts[1][0] - verts[0][0]) * (verts[2][1] - verts[0][1])) - ((verts[1][1] - verts[0][1]) * (verts[2][0] - verts[0][0]));
-	float crossABC = -1.0f * (crossBC * verts[0][0] + crossAC * verts[0][1] + crossAB * verts[0][2]);
-	return	-(1.0f * (crossBC * (float)i + crossAC * (float)j + crossABC) / crossAB);
+	float D = -1.0f * (crossBC * verts[0][0] + crossAC * verts[0][1] + crossAB * verts[0][2]);
+	// Ax + By + Cz + D = 0
+	return	-(1.0f * (crossBC * (float)i + crossAC * (float)j + D) / crossAB);
 }
 
 
