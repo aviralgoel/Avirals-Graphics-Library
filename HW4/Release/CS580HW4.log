@@ -1,0 +1,29 @@
+﻿  rend.cpp
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(242,21): warning C4101: 'the_X': unreferenced local variable
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(242,28): warning C4101: 'the_Y': unreferenced local variable
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(242,14): warning C4101: 'newUp': unreferenced local variable
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(527,33): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(528,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(529,37): warning C4244: '=': conversion from 'GzIntensity' to 'char', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(802,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(803,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(804,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(805,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(807,13): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(808,14): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(817,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(817,38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(817,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(827,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(827,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(828,45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(828,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(829,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(829,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(835,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(835,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(836,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(836,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(837,42): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\rend.cpp(837,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CS580HW4.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW4\Release\CS580HW4.exe

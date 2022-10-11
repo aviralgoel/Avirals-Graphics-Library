@@ -47,30 +47,64 @@ public:
 
   	// Constructors
 	GzRender(int xRes, int yRes);
+	void CameraInit();
 	~GzRender();
 
 	// HW1: Display methods
 	int GzDefault();
 	int GzBeginRender();
+	float MagnitudeOfVector(GzCoord& c);
+	float DotProduct3v(GzCoord& a, GzCoord& b);
 	int GzPut(int i, int j, GzIntensity r, GzIntensity g, GzIntensity b, GzIntensity a, GzDepth z);
 	int GzGet(int i, int j, GzIntensity *r, GzIntensity *g, GzIntensity *b, GzIntensity *a, GzDepth	*z);
 
 	int GzFlushDisplay2File(FILE* outfile);
 	int GzFlushDisplay2FrameBuffer();
 
+	GzIntensity GzClampPixelValueFloor(GzIntensity pixelValue);
+
+	GzIntensity GzClampPixelValueCeil(GzIntensity pixelValue);
+
+	GzIntensity GzBitShift4PixelValue(GzIntensity pixelValue);
+
 	// HW2: Render methods
 	int GzPutAttribute(int numAttributes, GzToken *nameList, GzPointer *valueList);
 	int GzPutTriangle(int numParts, GzToken *nameList, GzPointer *valueList);
+
+	void ClampR(float& R_E);
+
+
+
+
+
+
+	void SortByY(GzCoord vertices[3], GzCoord normals[3]);
+
+	void SortByXSpecialCases(GzCoord  vertices[3], GzCoord  normals[3]);
+
+	void SwapMatrixElements(GzCoord vertices[3], int i, int j);
+
+	float CalculateCoEfficientA(float x, float y);
+
+	float CalculateCoEfficientB(float x, float y);
+
+	float CalculateCoEfficientC(float x1, float x2, float y1, float y2);
+
+	float ZInterPolate(float i, float j, GzCoord verts[3]);
+
+	float GzRender::GeneralInterPolator(GzCoord verts[3], GzCoord norm[3], int i, int j);
 	
 	// HW3
 	int GzDefaultCamera();
 	int GzPutCamera(GzCamera camera);
 	int GzPushMatrix(GzMatrix matrix);
+	void IdentityMatrix(GzMatrix& matrix_I);
 	int GzPopMatrix();
+	int AddToStack(short& matLevel, GzMatrix* stack, GzMatrix mat);
 	
 	// Extra methods: NOT part of API - just for general assistance */
 	inline int ARRAY(int x, int y){return (x+y*xres);}	/* simplify fbuf indexing */
-	inline short	ctoi(float color) {return(short)((int)(color * ((1 << 12) - 1)));}		/* convert float color to GzIntensity short */
+	inline short ctoi(float color) {return(short)((int)(color * ((1 << 12) - 1)));}		/* convert float color to GzIntensity short */
 	
 	// Object Translation
 	int GzRotXMat(float degree, GzMatrix mat);
@@ -78,6 +112,8 @@ public:
 	int GzRotZMat(float degree, GzMatrix mat);
 	int GzTrxMat(GzCoord translate, GzMatrix mat);
 	int GzScaleMat(GzCoord scale, GzMatrix mat);
+	float GzRender::GInterPolate(float i, float j, float a, float b, float c, float d);
+
 
 };
 
