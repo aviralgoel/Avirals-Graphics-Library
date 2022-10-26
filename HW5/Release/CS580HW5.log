@@ -1,0 +1,12 @@
+﻿  tex_fun.cpp
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(28,20): warning C4476: 'fprintf' : unknown type field character '=' in format specifier
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(34,45): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(35,49): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(36,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(20,8): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(25,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(16,13): warning C4101: 'j': unreferenced local variable
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(95,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(96,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\tex_fun.cpp(98,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  CS580HW5.vcxproj -> C:\Users\avira\OneDrive\Documents\GitHub\Avirals-Graphics-Library\HW5\Release\CS580HW5.exe

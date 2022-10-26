@@ -13,10 +13,6 @@
 /***********************************************/
 /* HW1 methods: copy here the methods from HW1 */
 
-#define RGBA_DIMEMSION	4	/* RGBA -> 4D color */
-#define RGB_DIMEMSION	3	/* RGB -> 3D color */
-#define COLOR_LIMIT		4095	/* Clamping the color value into 0~4095. */
-
 static short matlevelNormal;	/* Global variable of the head of matrix stack of normals */
 int popMatToStack(short& head, GzMatrix* matStack);
 
